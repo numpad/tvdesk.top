@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>tvdesk.top</title>
+		<link rel="stylesheet" href="static/style.css">
+	</head>
+	<body>
+		<div class="header">
+			<h2>Select layout</h2>
+			<h4>(<u>4</u> videos selected)</h4>
+		</div>
+		
+		<form id="layout" action="/process" method="post">
+			<div class="textblock">
+				<p>
+					<center><b>videos</b></center><br>
+					<ol>
+						{% for i in range(videos.__len__()) %}
+							<li><a href="{{ videos['url' + i.__str__()] }}">{{ videos['url' + i.__str__()] }}</a></li>
+							<input type="hidden" name="{{'url' + i.__str__()}}" value="{{ videos['url' + i.__str__()] }}">
+						{% endfor %}
+					</ol>
+				</p>
+
+				<p>
+					Work in progress... All videos will be balanced!
+				</p>
+			</div>
+
+			<input id="next" type="submit" value="Next">
+		</form>
+
+		<footer>
+			(c) christian schäl | <a href="/about">about</a> | <a href="/legal">legal</a> | <a href="/donate">donate</a>
+		</footer>
+	</body>
+</html>

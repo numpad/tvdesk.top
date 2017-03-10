@@ -1,0 +1,74 @@
+
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+
+body {
+	background-color: #fafafa;
+	color: #555;
+	font-family: 'Open Sans', Arial;
+	margin-left: 40%;
+}
+
+* {
+	padding: 2px;
+	color: #555;
+}
+
+.header {
+	width: 30%;
+	padding: 0px;
+	margin: 0px;
+}
+
+.header h2 {
+	margin-bottom: -4px;
+}
+.header h4 {
+	margin-top: -8px;
+	font-weight: normal;
+}
+
+#urllist {
+}
+
+#urllist input {
+	margin-bottom: 2px;
+	width: 300px;
+}
+
+#next {
+	width: 307px !important;
+	padding: 3px;
+	background-color: #fafafa;
+	border: 0px;
+	border-bottom: 1px solid #555;
+	font-family: 'Open Sans', Arial;
+	font-size: 18px;
+	text-align: right;
+	outline: 0;
+	-moz-outline: 0;
+}
+
+#next:hover {
+	border-bottom: 2px solid #555 !important;
+}
+
+footer {
+	width: 307px;
+	font-family: monospace;
+	font-size: 10px;
+	text-align: center;
+}
+
+.textblock {
+	width: 307px;
+	text-align: justify;
+
+}
+
+.getvideobtn {
+	font-family: 'Open Sans', Arial;
+	font-size: 16px;
+	margin-top: 20px;
+	padding: 10px;
+	width: 307px;
+}
